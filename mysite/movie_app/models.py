@@ -166,6 +166,3 @@ class History(models.Model):
 
     def __str__(self):
         return f'{self.user}, {self.movie}, {self.watched_date}'
-
-class ActorImage(models.Model):
-    image = models.ImageField(upload_to='actor_images')
